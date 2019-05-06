@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="iso-8859-1">
+<meta name="keywords" content="mariposa, monarca, biodiversidad, mexicana">
+<meta name="viewport" content="width=device-width">
+<title>Monarch butterfly | Conabio</title>
+<script src="http://bdi.conabio.gob.mx/fotoweb/googleAnalytics.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="../_css/desktop.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../_css/tablet.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../_css/smartphone.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../_css/common.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../_css/common_print.css" media="print">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="../_css/responsiveslides.css">
+<link rel="stylesheet" href="../_css/demo.css">
+
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/le-frog/jquery-ui.min.css" />
+
+<link href="../_css/SpryAccordion.css" rel="stylesheet" type="text/css">
+<script src="../_js/SpryAccordion.js" type="text/javascript"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="../_js/responsiveslides.min.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.3/jquery-ui.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script src="../_js/gmaps.js"></script>
+<script>
+  $(document).ready(function(){
+    $('#menu-mobile-head').click(function(){
+      $('#menu-mobile a').slideToggle(400);
+    });
+  });
+    $(function () {
+
+      $("#slider4").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+    });
+</script>
+<script src="../_js/mapas_dinamicos.js"></script>  		
+        
+<style>
+	#map {
+    margin: 0px auto;
+    padding: 0px;
+  }
+	#map.fullscreen {
+		top: 0px;
+		left: 0px;
+		z-index: 10000;
+	}
+	#content{
+	}
+
+	#balloon{
+		color: rgb(3, 7, 48);
+		margin: 0px;
+		padding: 0px;
+		font-size: x-small;
+		text-transform: capitalize;
+		line-height: 1.6em;
+	}
+</style>
+
+
+ <script src="../_js/jquery.scrollTop.js"></script>
+	<script type="text/javascript">
+    
+    $(function(){
+               
+               scrollTop({
+                         color:"rgba(50, 61, 44, 0.7)",
+                         top:400, 
+                         time:500,
+                         position:"bottom",
+                         speed: 300 
+                         
+                        });
+                 
+               });
+    </script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+  <div id="header">
+  <div id="idioma">English <strong>|</strong> <a href="../santuarios.html">Espa&ntilde;ol</a></div>
+    <a href="index.html"><img src="../_imgs/logo_bm.png" border="0"></a>
+    <span class="conoce"><a href="http://www.biodiversidad.gob.mx"><img src="../_imgs/f_bm.png" border="0"></a></span>
+    <span class="conoce2"><a href="http://www.biodiversidad.gob.mx"><img src="../_imgs/f_bm2.png" border="0"></a></span>
+  </div><span class="cf"></span>
+  <!-- header ENDS-->
+  
+  	
+    <div id="menu-mobile-head">
+      	<div class="hambutton">Menu</div>
+    </div>
+    <div id="menu-mobile">
+     <a href="participa.html">Participate!</a>
+      <a href="monarca.html">The Monarch butterfly</a>
+      <a href="travesia.html">The great journey</a>
+      <a href="santuarios.html" class="seleccion">Sanctuaries</a>
+      <a href="historial.html">Background</a>
+      <a href="acciones.html">Actions</a>
+      <a href="organizaciones.html">Organizations</a>
+      <a href="conoce.html">To learn more</a>
+      <span class="cf"></span>
+    </div><!-- menu mobile ENDS-->
+    <div id="menu">
+      <a href="participa.html">Participate!</a>
+      <a href="monarca.html">The Monarch butterfly</a>
+      <a href="travesia.html">The great journey</a>
+      <a href="santuarios.html" class="seleccion">Sanctuaries</a>
+      <a href="historial.html">Background</a>
+      <a href="acciones.html">Actions</a>
+      <a href="organizaciones.html">Organizations</a>
+      <a href="conoce.html">To learn more</a>
+        <span class="cf"></span>
+    </div><!-- menu ENDS-->
+
+
+      <div id="ima">
+        <!-- Slideshow 4 -->
+    <div class="callbacks_container">
+      <ul class="rslides" id="slider4">
+        <li>
+          <img src="../_imgs/ima.jpg" alt="">
+        </li>
+        <li>
+          <img src="../_imgs/ima_s2.jpg" alt="">
+        </li>
+        <li>
+          <img src="../_imgs/ima_s3.jpg" alt="">
+        </li>
+        <li>
+          <img src="../_imgs/ima_s4.jpg" alt="">
+        </li>
+        <li>
+          <img src="../_imgs/ima_s5.jpg" alt="">
+        </li>
+        <li>
+          <img src="../_imgs/ima_s6.jpg" alt="">
+        </li>
+      </ul>
+    </div>
+      <span class="cf"></span>
+    </div><!-- ima ENDS-->
+
+ 
+	  <div id="content">
+      	<div class="drop-shadow raised frase">The responsible tourist can help the recovery of the Monarch butterfly.</div>
+        
+        <div id="submenu">
+    	<a href="" class="tit">Sanctuaries</a>
+        <a href="#reserva">Reserve</a>
+        <a href="#santuarios">Sanctuaries</a>
+        <a href="#turismo">Responsible Tourism</a>
+        <a href="#preguntas">Frequent Questions</a>
+        <a href="#monitoreo" class="nb">Monitoring</a>
+     <span class="cf"></span>
+     </div>
+    
+
+<div id="map"></div>
+
+
+<h2><a id="reserva"></a>Reserve</h2>
+<div class="drop-shadow raised der"><div class='caption' title='Photography: Iván Montes de Oca Cacheux'><img src="../_imgs/_secciones/mm14.jpg"></div></div>
+<p>Sites in the central and northern zone were encompassed by the creation of the <strong>Monarch butterfly Biosphere Reserve </strong>(56,259 ha) in the year 2000, on the limits of Estado de M&eacute;xico and Michoac&aacute;n. The core zones (13,551 ha) of the Reserve are found above 3,000 masl in fir forests and are known as Cerro Altamirano (<strong>588 ha</strong>&nbsp;in the north), Sierra Chincua-Campanario-Chivat&iacute;-Huacal (<strong>9,671 ha</strong><strong>&nbsp;</strong>in the center) and Cerro Pel&oacute;n (<strong>3,339 ha</strong>&nbsp;in the south).</p>
+
+<h2><a id="hibernacion"></a>Hibernation sites in Mexico</a></h2>
+<p>The hibernation sites are found in temperate forests above 3000 masl. The vegetation of these mountains is dominated by oak (<em>Quercus laurina, Q. acutifolia, Q. rugosa, Q. castanea, Q. obtusata, Q. salicifolia, Q. crassifolia</em>) and pine/oak forests on the lower slopes, and pine (<em>Pinus pseudostrobus, P. oocarpa, P. michoacana, P. rudis, P. teocote, P. ayacahuite, P. hartwegii</em>) and fir (<em>Abies religiosa</em>) forests in higher areas. There are also white cedar (<em>Cupressus lindleyi</em>) and mountain juniper (<em>Juniperus deppeana, J. monticola</em>) and prairies of <em>Potentilla candicans</em>&nbsp;(SEMARNAT 2001) and agricultural fields can be found up to elevations of 3000 masl.</p>
+<p>There are four regions in which hibernation sites have been recorded. These regions form a line of approximately 120 kilometers from northeast to southeast along the length of the Balsas basin continental divide. The four regions are all included within the area delimited by 18&deg;59'25&quot; to 19&deg;58'21&quot; N and 98&deg;41'37&quot; to 100&deg;49' W.</p>
+<p><strong>Northeast:</strong> Sierra de San Andres and Sierra de Mil Cumbres in Michoacán<br>
+  <strong>North:</strong> Cerro Altamirano in Michoacán<br>
+  <strong>Center:</strong> Sierra Chincua and Sierra del Campanario, in Michoac&aacute;n and Estado de M&eacute;xico. All of these Sierras delimit the states of Michoac&aacute;n and Estado de M&eacute;xico.<br>
+  <strong>Southeast:</strong> Western slope of the Nevado de Toluca in Estado de México</p>
+<p>A fifth region, on the western slope of the volcano Popocat&eacute;petl, 10 kilometers to the southeast of Atlauta in Estado de M&eacute;xico, is more than 100 kilometers away from the other sites and, due to its small size, has never been included in the monitoring program.</p>
+<p>Within the four regions, around 22 hibernation sites have been identified <strong>(Table 1)</strong>.</p>
+<p><em>Table 1. Regions, mountain chains, sites of the colonies and states in which groups of the Monarch butterfly have historically been found.</em></p>
+
+<div class="columnas">
+<ul>
+<li><strong>Michoac&aacute;n</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Northeastern region
+  <ul>
+  <li>Sierra de San Andr&eacute;s (Los Azufres)
+      <ul>
+      <li>Colonia de P&iacute;zcuaro</li>
+      <li>Colonia de Los Azufres</li>
+      </ul>
+  </li>
+  </ul>
+  
+  <ul>
+  <li>Sierra de Mil Cumbres
+    <ul>
+      <li>San Andr&eacute;s</li>
+      <li>R&iacute;o de Parras</li>
+      <li>Puerto Morillo</li>
+      </ul>
+  </li>
+  </ul>
+  
+  <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Northern region
+    <ul>
+  <li>Cerro Altamirano
+    <ul>
+      <li>Colonia Contepec</li>
+    </ul>
+  </li>
+  </ul>
+  
+  <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Central Northern region
+    <ul>
+  <li>Sierra de Chincua
+    <ul><li>Colonia Llano del Koala</li>
+      <li>Colonia Llano del Toro</li>
+      <li>Colonia Mojonera Alta</li>
+      <li>Colonia El Zacatonal</li>
+      <li>Colonia Puerto Bermeo</li>
+    </ul>
+  </li>
+  </ul>
+  
+ </li></ul>
+
+
+
+<ul>
+<li><strong>Michoac&aacute;n and Estado de M&eacute;xico</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Central region
+  <ul>
+  <li>Sierra del Campanario
+    <ul>
+      <li>Colonia El Rosario</li>
+      <li>Colonia Cerro Blanco</li>
+      <li>Colonia Piedra Boluda</li>
+      <li>Colonia El Picacho</li>
+      <li>Colonia Lomas de Aparicio</li>
+      <li>Colonia Los Trozos</li>
+      </ul>
+  </li>
+  </ul>
+  
+  <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Central Southern region
+    <ul>
+  <li>Cerro Pel&oacute;n
+    <ul>
+      <li>Colonia El Cedral</li>
+      <li>Colonia Carditos</li>
+      <li>Colonia Santa Teresa</li>
+      <li>Colonia Las Lagunitas</li>
+    </ul>
+  </li>
+  </ul>
+  
+ </li></ul>
+ 
+
+
+<ul>
+<li><strong>Estado de M&eacute;xico</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Southeastern region
+  <ul>
+  <li>Nevado de Toluca
+    <ul>
+      <li>Colonia Piedra Herrada</li>
+      <li>Colonia San Francisco</li>
+      <li>Colonia Palomas</li>
+      </ul>
+  </li>
+  </ul>
+  
+ </li></ul></div>
+
+<p>Prior to this declaration, there was an evolution in terms of declaring protected areas in the zone.&nbsp; First, the <strong>Fauna</strong> <strong>Reserve and Refuge Zones </strong>in 1980 protected hibernation zones without specifying locations and restricting extractive activities only during the season of hibernation (November to March).&nbsp;The <strong>Special Biosphere Reserve of the Monarch</strong> <strong>butterfly</strong>&nbsp;(16,110 ha) defined the location of five areas in 1986 and the name was later changed to&nbsp;<strong>Monarch Butterfly Protected Natural Area</strong>&nbsp;in 1996.</p>
+
+<p>The <strong>Reserve</strong>&nbsp;extends along the frontier of the states of Michoac&aacute;n and Estado de M&eacute;xico, including the municipalities of Temascalcingo, San Jos&eacute; del Rinc&oacute;n, Donato Guerra and Villa de Allende (in Estado de M&eacute;xico) and Contepec, Senguio, Angangueo, Ocampo, Zit&aacute;cuaro and &Aacute;poro (in Michoac&aacute;n).</p>
+
+<p>The area of the reserve includes 93 different owners: 59 ejidos, 13 indigenous Mazahua and Otom&iacute; communities and 21 small property owners, in addition to featuring state and federal properties.</p>
+
+<h2><a id="santuarios"></a>Sanctuaries</h2>
+
+<h3>What is a sanctuary?</h3>
+<p>A sanctuary is a place that hosts flora, fauna, exceptional landscapes or natural events that make it UNIQUE, and must be protected and respected for its fragility and importance to nature and society. In the case of the Monarch butterfly, the forest areas in which they hibernate are considered sanctuaries. These sites provide them with protection from extreme climatic events and the peace they require in order to save the fats that they use as a fuel for their return journey. Every time the butterflies are disturbed and fly, they use energy they need in order to be able to make the return journey.</p>
+<p>In order to visit the Monarch butterflies you can:<br>
+  In <strong>Michoac&aacute;n</strong>, visit the sanctuaries of<strong> Ejido</strong><strong>&nbsp;</strong><strong>El Rosario</strong>&nbsp;in the Sierra Campanario, <strong>Ejido Cerro Prieto</strong>&nbsp;and&nbsp;<strong>Ejido Senguio</strong>&nbsp;in the Sierra Chincua.&nbsp;<br>
+In <strong>Estado de M&eacute;xico</strong>, visit <strong>Ejido La Mesa</strong>&nbsp;in Sierra Campanario, <strong>Ejido El Capul&iacute;n</strong>&nbsp;in Cerro Pel&oacute;n and <strong>Ejido San Mateo</strong>&nbsp;Almomoloa in Piedra Herrada.</p>
+  
+
+<h2><a id="turismo"></a>Responsible Tourism</h2>
+<div class="drop-shadow raised izq"><div class='caption' title='Photography: Miguel Ángel Sicilia Manzo'><img src="../_imgs/_secciones/mm13.jpg"></div></div>
+<p><strong>Responsible tourism </strong>is defined as the attitude of respect in relation to the places and people with which a tourist comes in contact throughout their visit, and is characterized by: </p>
+
+<p>Respect for the environment.<br>
+Minimizing negative economic, environmental and social impacts. <br>
+Creating benefits for local people and improving the wellbeing of local communities. Involving local people in decisions that affect their lives and life opportunities.<br>
+Making positive contributions to the conservation of natural and cultural heritage, aiding conservation of the cultural diversity of the world.<br>
+Providing more agreeable experiences for the tourists through contact with the local population and a greater understanding of the social and environmental aspects of the local culture.<br>
+Being culturally sensitive, promoting respect and understanding among tourists and hosts and contributing to the development of trust and local pride.</p>
+  
+  <p>There are a series of recommendations for visitors to the sanctuaries:</p>
+    <h2>&quot;Code of conduct for the responsible tourist&quot;</h2>
+    
+    <ol>
+      <li><span class="olv">I follow the indications and instructions of local guides.</span></li>
+      <li><span class="olv">During my trip, I follow the established pathways.</span></li>
+      <li><span class="olv">I do not introduce foods, alcoholic beverages, sharp objects, firearms or pets to the sanctuaries.</span></li>
+      <li><span class="olv">I do not take plants, animals, fungi or any other element that forms part of the forest.</span></li>
+      <li><span class="olv">I do not smoke or start fires.</span></li>
+      <li><span class="olv">I respect the limits of access for observing the Monarch butterfly colonies.</span></li>
+      <li><span class="olv">I remain silent during my time in the sanctuary.</span></li>
+      <li><span class="olv">I do not use a flash to take photographs.</span></li>
+      <li><span class="olv">I do not disturb, touch or take Monarch butterflies.</span></li>
+      <li><span class="olv">I do not stay more than 18 minutes within the sanctuary, in order to give the chance to other people to live this experience without changing the hibernation status of the butterflies.</span></li>
+    </ol>
+
+      <div class="columnas">
+<ul>
+<li><strong>November</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arrival of the Monarch butterflies to the hibernation sites.
+  <ul>
+    <li>On arrival, they spend several days flying around before locating the best place for their hibernation. During this month, it is best not to visit them in order not to interfere with their selection.</li>
+  </ul>
+</li></ul>
+
+
+
+<ul>
+<li><strong>December to January</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Establishment of colonies for hibernation.
+  <ul>
+    <li>They group, forming clusters on the branches of the trees to protect themselves from the cold during the winter.</li>
+  </ul>
+</li></ul> 
+
+
+<ul>
+<li><strong>February to March</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reproductive activity begins (nuptial flight).
+  <ul>
+    <li>There is more activity as the days get warmer; they are observed in flight, mating, taking water and nectar in preparation for their return to the north of Mexico and south of the United States in order to produce the following generation.</li>
+  </ul>
+  
+ </li></ul>
+ 
+ </div>
+ 
+ 
+      <h2><a id="preguntas"></a>Frequent questions in the sanctuaries</h2>
+      <div id="Accordion1" class="Accordion" tabindex="0">
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">Why can´t I take the dead Monarch butterflies?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr>
+            <td>In nature, everything has a reason to be: the <strong>Monarch butterflies</strong> are living beings that form part of the food web in the forests of the sanctuaries. Some die as part of their natural process and become food for mice and birds that eat their abdomen for the fats it contains. The large quantity of dead <strong>Monarch butterflies</strong> in the sanctuaries generates a large concentration of chemical substances. Currently, researchers are studying the possibility that this high concentration helps the Monarch locate the hibernation sites.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">Why can´t I touch and take Monarch butterflies?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr>
+            <td>Monarch butterfly wings are formed by thousands of scales that are very sensitive to touch and easily broken. When we touch them they lose some scales that protect them and, as a consequence, they are more exposed to all of the environmental factors (cold, light and wind) that put their lives at risk. It is like if we had a third degree burn.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">Why can´t I use a flash to take photographs?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr>
+            <td>Repeated exposure to camera flashes changes the state of hibernation of the Monarch butterflies. They perceive this light and move; they may detach from the trees and become separated from their colonies. Once separated, they are more exposed to the cold and to their natural predators.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">Why can´t I get closer to the colonies if I have paid my entrance fee?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr><td>Monarch butterflies travel up to 4000 km to escape the winter cold of the north of the continent. During their journey of up to two months, they avoid a series of situations that put them at risk and when they arrive to Mexico they need to rest in the sites that they themselves choose in order to group and form colonies that protect them and keep them alive over the winter. <strong>Monarch butterflies</strong> developed the capacity to hibernate; this means that they are adapted to lower their metabolism and temperature, put their reproductive status on pause, rest and live from the fats stored within their bodies during the journey until arriving at the sanctuaries. We must not forget that they are very sensitive to our presence and that each time they move in the state of hibernation we weaken them since they expend energy (fat) with these movements. They need this energy to protect them against the inclemency of the environment (cold, rain, hail, wind and frost) and to return to the north of Mexico and south of the United States. It is like being exposed to the cold with a degree of anemia.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">Why can´t I make noise?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr><td>Monarch butterflies remain in a state of hibernation during the months of December, January and part of February. Excess noise stresses them and interrupts their rest, making them expend energy and reducing the possibility that they survive the return flight.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">Why can´t I spend more time in the sanctuary?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr>
+            <td>With their antennae, the Monarch butterflies detect the carbon dioxide (CO<sub>2</sub>) that we expel during respiration. A high concentration of CO<sub>2</sub> disturbs them, causing them to fly and detach from their colonies. This leads them to expend energy, leaving them vulnerable to the climate and to their natural predators.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">Why can´t I eat while I am watching the butterflies?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr><td>Solid organic (food wastes) and inorganic (wrappers and plastic bags, among others) residues contaminate the hibernation areas of the Monarch butterfly.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">What is a sanctuary?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr><td>It is a place that hosts flora, fauna, exceptional landscapes or natural events that make it UNIQUE and must be protected and respected for its fragility and importance to nature and society.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">What is a migration?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr><td>This is the seasonal displacement carried out by some species of animals from one place to another, with the aim of finding the best place to reproduce, avoiding extreme climates or searching for food.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">What is hibernation?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr><td>This is the capacity of some organisms to lower their metabolism and temperature, pause their reproductive status, rest and feed from stored reserves until the external environmental conditions are more favorable.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">What is Asclepias?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr>
+            <td>It is a plant, commonly known as  &quot;milkweed&quot;, on which the caterpillars of the Monarch butterfly depend for food during the first stage of their biological cycle. The genus <em>Asclepias</em> has approximately 140 different species; the best known of these is <em>Asclepias curassavica</em> with orange and yellow flowers and white sap. These are toxic plants, but the caterpillars store the toxin and use it as a mechanism of protection against their natural predators.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">What is reproductive diapause?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr><td>This is the interruption of the reproductive cycle of certain organisms, such as insects, for a defined period of time and is generally associated with climate and restarts when environmental conditions more suitable for reproduction are presented.</td></tr></table></div>
+        </div>       
+    </div>
+   
+      
+      <h2><a id="monitoreo"></a>Monitoring</h2>
+    <div id="grafica" class="drop-shadow raised cen1">
+      <a href="http://awsassets.panda.org/downloads/superficie_de_bosque_ocupado_por_la_mariposa_monarca_en_los_santuarios_de_mexico__2016_2.pdf" target="_blank">
+      <div class='caption' title='Fuente: Rendón-Salinas et al. 2017.'><img src="_imgs/_secciones/grafica_2019-01.png"></div>
+      </a>
+    </div>
+        
+    <div id="graficam" class="drop-shadow raised cen1">
+      <a href="http://awsassets.panda.org/downloads/superficie_de_bosque_ocupado_por_la_mariposa_monarca_en_los_santuarios_de_mexico__2016_2.pdf" target="_blank">
+      <div class='caption' title='Fuente: Rendón-Salinas et al. 2017.'><img src="_imgs/_secciones/grafica_2019-01.png">
+      </div>
+      </a>
+    </div>
+    
+    <p>Monitoring of populations in the hibernation sites began regularly in 1993. Despite congregating in relatively small areas (between 0.5 and 20 hectares), there are great difficulties in estimating Monarch populations. To date, the area (hectares) occupied by the butterflies in the <strong>month of December</strong> has been used for populational estimation. The information presented in the monitoring reports is the accumulated surface of the aggregations of butterflies.</p>
+    
+
+<p>During the past 20 years (1993 to 2013), the area occupied by the Monarch butterflies in Mexico has varied from <strong>0.67 to 21 hectares</strong>. Thus, millions of butterflies that occupy more than 3 million square kilometers of the United States and Canada during the reproductive period congregate in less than <strong>20 hectares</strong>&nbsp;in Mexico.</p>
+
+
+      <span class="cf"></span>      
+  </div>
+  <!-- content ENDS-->
+      
+      
+      <div id="footer">
+        <center><img src="../_imgs/logos.png" usemap="#Map">
+          <map name="Map">
+            <area shape="rect" coords="5,5,180,57" href="http://www.semarnat.gob.mx" target="_blank">
+            <area shape="rect" coords="192,4,345,59" href="http://www.conanp.gob.mx" target="_blank">
+            <area shape="rect" coords="353,5,494,65" href="http://www.conafor.gob.mx/web/" target="_blank">
+            <area shape="rect" coords="508,6,622,61" href="http://www.profepa.gob.mx" target="_blank">
+            <area shape="rect" coords="638,5,798,58" href="http://www.conabio.gob.mx" target="_blank">
+            <area shape="rect" coords="580,73,696,126" href="http://www.nature.org" target="_blank">
+            <area shape="rect" coords="259,64,336,128" href="http://www.wwf.org.mx" target="_blank">
+            <area shape="rect" coords="100,66,171,130" href="http://www.unam.mx" target="_blank">
+            <area shape="rect" coords="195,65,245,129" href="http://www.ib.unam.mx" target="_blank">
+          </map>
+        </center>
+      </div><!-- footer ENDS-->
+
+</div><!-- wrapper ENDS-->
+<script type="text/javascript">
+var Accordion1 = new Spry.Widget.Accordion("Accordion1",{useFixedPanelHeights:false, contentIsOpen:false, defaultPanel: -1});
+</script>
+
+<!-- Código para estadísticas en Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8226401-19");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- Fin del código para estadísticas en Google Analytics -->
+</body>
+</html>

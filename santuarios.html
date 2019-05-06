@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="iso-8859-1">
+<meta name="keywords" content="mariposa, monarca, biodiversidad, mexicana">
+<meta name="viewport" content="width=device-width">
+<title>Mariposa Monarca | Conabio</title>
+<script src="http://bdi.conabio.gob.mx/fotoweb/googleAnalytics.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="_css/desktop.css" media="screen">
+<link rel="stylesheet" type="text/css" href="_css/tablet.css" media="screen">
+<link rel="stylesheet" type="text/css" href="_css/smartphone.css" media="screen">
+<link rel="stylesheet" type="text/css" href="_css/common.css" media="screen">
+<link rel="stylesheet" type="text/css" href="_css/common_print.css" media="print">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="_css/responsiveslides.css">
+<link rel="stylesheet" href="_css/demo.css">
+
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/le-frog/jquery-ui.min.css" />
+
+<link href="_css/SpryAccordion.css" rel="stylesheet" type="text/css">
+<script src="_js/SpryAccordion.js" type="text/javascript"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="_js/responsiveslides.min.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.3/jquery-ui.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script src="_js/gmaps.js"></script>
+<script>
+  $(document).ready(function(){
+    $('#menu-mobile-head').click(function(){
+      $('#menu-mobile a').slideToggle(400);
+    });
+  });
+    $(function () {
+
+      $("#slider4").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+    });
+</script>
+<script src="_js/mapas_dinamicos.js"></script>  		
+        
+<style>
+	#map {
+    margin: 0px auto;
+    padding: 0px;
+  }
+	#map.fullscreen {
+		top: 0px;
+		left: 0px;
+		z-index: 10000;
+	}
+	#content{
+	}
+
+	#balloon{
+		color: rgb(3, 7, 48);
+		margin: 0px;
+		padding: 0px;
+		font-size: x-small;
+		text-transform: capitalize;
+		line-height: 1.6em;
+	}
+</style>
+
+
+ <script src="_js/jquery.scrollTop.js"></script>
+	<script type="text/javascript">
+    
+    $(function(){
+               
+               scrollTop({
+                         color:"rgba(50, 61, 44, 0.7)",
+                         top:400, 
+                         time:500,
+                         position:"bottom",
+                         speed: 300 
+                         
+                        });
+                 
+               });
+    </script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+  <div id="header">
+  <div id="idioma"><a href="en/santuarios.html">English</a> <strong>|</strong> Espa&ntilde;ol</div>
+    <a href="index.html"><img src="_imgs/logo_bm.png" border="0"></a>
+    <span class="conoce"><a href="http://www.biodiversidad.gob.mx"><img src="_imgs/f_bm.png" border="0"></a></span>
+    <span class="conoce2"><a href="http://www.biodiversidad.gob.mx"><img src="_imgs/f_bm2.png" border="0"></a></span>
+  </div><span class="cf"></span>
+  <!-- header ENDS-->
+  
+  	
+    <div id="menu-mobile-head">
+      	<div class="hambutton">Menú</div>
+    </div>
+    <div id="menu-mobile">
+      <a href="participa.html">&iexcl;Participa!</a>
+      <a href="monarca.html">La Monarca</a>
+      <a href="travesia.html">La gran traves&iacute;a</a>
+      <a href="santuarios.html" class="seleccion">Los santuarios</a>
+      <a href="historial.html">Historial</a>
+      <a href="acciones.html">Acciones</a>
+      <a href="organizaciones.html">Organizaciones</a>
+      <a href="conoce.html">Para conocer m&aacute;s</a>
+      <span class="cf"></span>
+    </div><!-- menu mobile ENDS-->
+    <div id="menu">
+      <a href="participa.html">&iexcl;Participa!</a>
+      <a href="monarca.html">La Monarca</a>
+      <a href="travesia.html">La gran traves&iacute;a</a>
+      <a href="santuarios.html" class="seleccion">Los santuarios</a>
+      <a href="historial.html">Historial</a>
+      <a href="acciones.html">Acciones</a>
+      <a href="organizaciones.html">Organizaciones</a>
+      <a href="conoce.html">Para conocer m&aacute;s</a>
+        <span class="cf"></span>
+    </div><!-- menu ENDS-->
+
+
+      <div id="ima">
+        <!-- Slideshow 4 -->
+    <div class="callbacks_container">
+      <ul class="rslides" id="slider4">
+        <li>
+          <img src="_imgs/ima.jpg" alt="">
+        </li>
+        <li>
+          <img src="_imgs/ima_s2.jpg" alt="">
+        </li>
+        <li>
+          <img src="_imgs/ima_s3.jpg" alt="">
+        </li>
+        <li>
+          <img src="_imgs/ima_s4.jpg" alt="">
+        </li>
+        <li>
+          <img src="_imgs/ima_s5.jpg" alt="">
+        </li>
+        <li>
+          <img src="_imgs/ima_s6.jpg" alt="">
+        </li>
+      </ul>
+    </div>
+      <span class="cf"></span>
+    </div><!-- ima ENDS-->
+
+ 
+	  <div id="content">
+      	<div class="drop-shadow raised frase">El turista responsable puede ayudar a la recuperaci&oacute;n de la mariposa Monarca.</div>
+        
+        <div id="submenu">
+    	<a href="" class="tit">Los santuarios</a>
+        <a href="#reserva">Reserva</a>
+        <a href="#santuarios">Santuarios</a>
+        <a href="#turismo">Turismo responsable</a>
+        <a href="#preguntas">Preguntas frecuentes</a>
+        <a href="#monitoreo" class="nb">Monitoreo</a>
+     <span class="cf"></span>
+     </div>
+    
+
+<div id="map"></div>
+
+
+<h2><a id="reserva"></a>Reserva</h2>
+<div class="drop-shadow raised der"><div class='caption' title='Fotografía: Iván Montes de Oca Cacheux'><img src="_imgs/_secciones/mm14.jpg"></div></div>
+<p>Las sitios en la zona centro y norte fueron enmarcados por la creaci&oacute;n de la <strong>Reserva de la Biosfera Mariposa Monarca</strong> (56,259 ha) en el a&ntilde;o 2000, en los l&iacute;mites de los Estados de M&eacute;xico y Michoac&aacute;n. Las zonas n&uacute;cleo (13,551 ha) de la reserva se encuentran por arriba de los 3,000 msnm en bosques de oyamel y se conocen como Cerro Altamirano (<strong>588 ha</strong> en el norte), Sierra Chincua-Campanario-Chivat&iacute;-Huacal (<strong>9,671 ha </strong>en el centro) y Cerro Pel&oacute;n (<strong>3,339 ha</strong> en el sur).</p>
+
+<h2><a id="hibernacion"></a>Sitios de hibernaci&oacute;n en M&eacute;xico</a></h2>
+<p>Los sitios de hibernaci&oacute;n se localizan en bosques templados por arriba de los 3000 msnm. La vegetaci&oacute;n de estas monta&ntilde;as est&aacute; dominada por encinos (<em>Quercus laurina, Q. acutifolia, Q. rugosa, Q. castanea, Q. obtusata, Q. salicifolia, Q. crassifolia</em>), pinos y encinos en las pendientes bajas y bosques de pinos (<em>Pinus pseudostrobus, P. oocarpa, P. michoacana, P. rudis, P. teocote, P. ayacahuite, P. hartwegii</em>), de oyamel (<em>Abies religiosa</em>) en las partes altas. Tambi&eacute;n hay cedro blanco (<em>Cuppresus lindleyi</em>) y&nbsp; jun&iacute;pero de monta&ntilde;a (<em>Juniperus deppeana, J. monticola</em>) y praderas de <em>Potentilla candicans</em> (SEMARNAT 2001). Tambi&eacute;n hay campos agr&iacute;colas localizados hasta los 3000 m.</p>
+<p>Existen cuatro regiones en donde se han registrado sitios de hibernaci&oacute;n. Estas regiones forman una l&iacute;nea de aproximadamente 120 kil&oacute;metros de noroeste a sureste a lo largo del parteaguas de la cuenca del Balsas. Las cuatro regiones se incluyen dentro de 18&deg;59'25&quot; a 19&deg;58'21&quot; latitude norte y 98&deg;41'37&quot; a 100&deg;49' longitud oeste.</p>
+<p><strong>Noroeste: </strong>Sierra de San Andres y Sierra de Mil Cumbres en Michoac&aacute;n<br>
+  <strong>Norte:</strong> Cerro Altamirano en Michoac&aacute;n<br>
+  <strong>Centro:</strong> Sierra Chincua y Sierra del Campanario, en Michoac&aacute;n y en el Estado de M&eacute;xico. Todas estas Sierras limitan los estados de Michoac&aacute;n y Estado de M&eacute;xico.<br>
+  <strong>Sureste:</strong> ladera occidental del Nevado de Toluca en el Estado de M&eacute;xico</p>
+<p>Una quinta regi&oacute;n, en la ladera occidental del Popocat&eacute;petl, 10 kil&oacute;metros al sureste de Atlauta en el Estado de M&eacute;xico, est&aacute; a m&aacute;s de 100 kil&oacute;metros de distancia del resto de los sitios y debido a su peque&ntilde;o tama&ntilde;o nunca ha sido incluida en el programa de monitoreo.</p>
+<p>Dentro de las cuatro regiones se han identificado alrededor de 22 sitios de hibernaci&oacute;n <strong>(Cuadro 1)</strong>.</p>
+<p><em>Cuadro 1. Regiones, sierras, sitios de las colonias y estados en donde hist&oacute;ricamente se han localizado las agregaciones de mariposa Monarca.</em></p>
+
+<div class="columnas">
+<ul>
+<li><strong>Michoac&aacute;n</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regi&oacute;n noroeste
+  <ul>
+  <li>Sierra de San Andr&eacute;s (Los Azufres)
+      <ul>
+      <li>Colonia de P&iacute;zcuaro</li>
+      <li>Colonia de Los Azufres</li>
+      </ul>
+  </li>
+  </ul>
+  
+  <ul>
+  <li>Sierra de Mil Cumbres
+    <ul>
+      <li>San Andr&eacute;s</li>
+      <li>R&iacute;o de Parras</li>
+      <li>Puerto Morillo</li>
+      </ul>
+  </li>
+  </ul>
+  
+  <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regi&oacute;n norte
+    <ul>
+  <li>Cerro Altamirano
+    <ul>
+      <li>Colonia Contepec</li>
+    </ul>
+  </li>
+  </ul>
+  
+  <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regi&oacute;n centro norte
+    <ul>
+  <li>Sierra de Chincua
+    <ul><li>Colonia Llano del Koala</li>
+      <li>Colonia Llano del Toro</li>
+      <li>Colonia Mojonera Alta</li>
+      <li>Colonia El Zacatonal</li>
+      <li>Colonia Puerto Bermeo</li>
+    </ul>
+  </li>
+  </ul>
+  
+ </li></ul>
+
+
+
+<ul>
+<li><strong>Michoac&aacute;n y Estado de M&eacute;xico</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regi&oacute;n centro
+  <ul>
+  <li>Sierra del Campanario
+    <ul>
+      <li>Colonia El Rosario</li>
+      <li>Colonia Cerro Blanco</li>
+      <li>Colonia Piedra Boluda</li>
+      <li>Colonia El Picacho</li>
+      <li>Colonia Lomas de Aparicio</li>
+      <li>Colonia Los Trozos</li>
+      </ul>
+  </li>
+  </ul>
+  
+  <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regi&oacute;n centro sur
+    <ul>
+  <li>Cerro Pel&oacute;n
+    <ul>
+      <li>Colonia El Cedral</li>
+      <li>Colonia Carditos</li>
+      <li>Colonia Santa Teresa</li>
+      <li>Colonia Las Lagunitas</li>
+    </ul>
+  </li>
+  </ul>
+  
+ </li></ul>
+ 
+
+
+<ul>
+<li><strong>Estado de M&eacute;xico</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regi&oacute;n sureste
+  <ul>
+  <li>Nevado de Toluca
+    <ul>
+      <li>Colonia Piedra Herrada</li>
+      <li>Colonia San Francisco</li>
+      <li>Colonia Palomas</li>
+      </ul>
+  </li>
+  </ul>
+  
+ </li></ul></div>
+
+<p>Antes de esta declaratoria, hubo una evoluci&oacute;n de decretos de &aacute;reas protegidas en la zona. Primero las <strong>Zonas de Reserva y Refugio de Fauna Silvestre</strong> en 1980 protegieron las zonas de hibernaci&oacute;n sin especificar localidades y restringiendo las actividades extractivas solamente durante la estaci&oacute;n de hibernaci&oacute;n (noviembre a marzo). <strong>La Reserva Especial de la Biosfera Mariposa Monarca</strong> (16,110 ha) defini&oacute; la ubicaci&oacute;n de cinco &aacute;reas, en 1986 que m&aacute;s adelante se le cambio el nombre a <strong>&Aacute;rea Natural Protegida Mariposa Monarca</strong> en 1996.</p>
+
+<p>La <strong>Reserva</strong> se extiende a lo largo de la frontera de los estados de M&eacute;xico y Michoac&aacute;n incluyendo los municipios de Temascalcingo, San Jos&eacute; del Rinc&oacute;n, Donato Guerra y Villa de Allende (en el Estado de M&eacute;xico) y de Contepec, Senguio, Angangueo, Ocampo, Zit&aacute;cuaro y &Aacute;poro (en el estado de Michoac&aacute;n).</p>
+
+<p>El &aacute;rea de la reserva incluye 93 propietarios: 59 ejidos, 13 comunidades ind&iacute;genas mazahuas y otom&iacute;es, y 21 peque&ntilde;as propiedades, adem&aacute;s de propiedades estatales y federales.</p>
+
+<h2><a id="santuarios"></a>Santuarios</h2>
+
+<h3>&iquest;Qu&eacute; es un santuario?</h3>
+<p>Un santuario es un lugar que alberga flora, fauna, paisajes&nbsp; o eventos naturales excepcionales que lo hacen &Uacute;NICO, y debe ser protegido y respetado por su fragilidad e importancia para la naturaleza y la sociedad. En el caso de la mariposa Monarca, se consideran santuarios las &aacute;reas de bosque en donde pasan la hibernaci&oacute;n. Estos sitios les proporcionan protecci&oacute;n de eventos clim&aacute;ticos extremos y la tranquilidad que requieren para ahorrar las grasas que les servir&aacute;n de combustible en el viaje de regreso. Cada vez que las mariposas son perturbadas y vuelan est&aacute;n utilizando energ&iacute;a que necesitan para poder hacer el vuelo de regreso.</p>
+<p>Para visitar a las mariposas Monarca puedes ir a:<br>
+  En <strong>Michoac&aacute;n</strong> visita los santuarios del <strong>Ejido </strong><strong>El Rosario</strong> en la Sierra Campanario, del <strong>Ejido Cerro Prieto</strong> y del&nbsp;<strong>Ejido Senguio</strong> en la Sierra Chincua. <br>
+  En el <strong>Estado de M&eacute;xico</strong> puedes visitar el <strong>Ejido La Mesa</strong> en Sierra Campanario, el <strong>Ejido El Capul&iacute;n</strong> en Cerro Pel&oacute;n y el <strong>Ejido San Mateo</strong> Almomoloa en Piedra Herrada.</p>
+  
+
+<h2><a id="turismo"></a>Turismo responsable</h2>
+<div class="drop-shadow raised izq"><div class='caption' title='Fotografía: Miguel Ángel Sicilia Manzo'><img src="_imgs/_secciones/mm13.jpg"></div></div>
+<p>El<strong> turismo responsable</strong> se define como la actitud de respeto en relaci&oacute;n a los lugares y a las personas con las cuales el turista entra en contacto a lo largo de su estancia en el lugar que visita y se caracteriza por: </p>
+
+<p>El respeto al medio ambiente.<br>
+  Minimizar los impactos negativos econ&oacute;micos, ambientales y sociales.<br>
+  Crear beneficios para la gente local y mejorar el bienestar de las comunidades locales.<br>
+  Involucrar a las personas locales en las decisiones que afectan sus vidas y oportunidades de vida.<br>
+  Hacer contribuciones positivas para la conservaci&oacute;n del patrimonio natural y cultural, aportando a la conservaci&oacute;n de la diversidad cultural del mundo.<br>
+  Proporcionar experiencias m&aacute;s agradables para los turistas a trav&eacute;s del contacto con la poblaci&oacute;n local y una mayor comprensi&oacute;n de los aspectos sociales y ambientales de la cultura local.<br>
+  Ser culturalmente sensible, promocionar respeto y entendimiento entre los turistas y los anfitriones y contribuir al desarrollo de la confianza y el orgullo local.</p>
+  
+  <p>Existen una serie de recomendaciones para los visitantes a los santuarios:</p>
+    <h2>&quot;Código de conducta del turista responsable&quot;</h2>
+    
+    <ol>
+      <li><span class="olv">Sigo las indicaciones e instrucciones de los gu&iacute;as locales.</span></li>
+      <li><span class="olv">Durante mi recorrido sigo los senderos establecidos.</span></li>
+      <li><span class="olv">No introduzco alimentos, bebidas alcoh&oacute;licas, objetos punzo cortantes, armas de fuego ni mascotas a los santuarios.</span></li>
+      <li><span class="olv">No me llevo plantas, animales, hongos, ni cualquier otro elemento que forma parte del bosque.</span></li>
+      <li><span class="olv">No fumo, ni enciendo fogatas.</span></li>
+      <li><span class="olv">Respeto los l&iacute;mites de acceso para la observaci&oacute;n de las colonias de mariposa Monarca.</span></li>
+      <li><span class="olv">Permanezco en silencio durante mi estancia en el santuario.</span></li>
+      <li><span class="olv">No uso flash para tomar fotograf&iacute;as.</span></li>
+      <li><span class="olv">No molesto, no tomo, ni me llevo mariposas Monarca.</span></li>
+      <li><span class="olv">No permanezco m&aacute;s de 18 minutos dentro del santuario, para dar oportunidad a otras personas de vivir esta experiencia sin alterar el estado de hibernaci&oacute;n de las Monarca.</span></li>
+    </ol>
+
+      <div class="columnas">
+<ul>
+<li><strong>Noviembre</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Llegada de las mariposas Monarca a los sitios de hibernaci&oacute;n.
+  <ul>
+    <li>Al llegar pasan varios d&iacute;as volando antes de ubicar el mejor lugar para su hibernaci&oacute;n. Durante este mes es mejor no visitarlas para no interferir con su selecci&oacute;n.</li>
+  </ul>
+</li></ul>
+
+
+
+<ul>
+<li><strong>Diciembre a enero</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Establecimiento de las colonias para su hibernaci&oacute;n.
+  <ul>
+    <li>Se agrupan formando racimos en las ramas de los &aacute;rboles para protegerse del frio durante el invierno.</li>
+  </ul>
+</li></ul> 
+
+
+<ul>
+<li><strong>Febrero a marzo</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se inicia la actividad reproductiva (vuelo nupcial).
+  <ul>
+    <li>Hay m&aacute;s actividad al calentarse el d&iacute;a, se observan en vuelo, apare&aacute;ndose, tomando agua y n&eacute;ctar en preparaci&oacute;n para su regreso al norte de M&eacute;xico y sur de Estados Unidos para producir la siguiente generaci&oacute;n.</li>
+  </ul>
+  
+ </li></ul>
+ 
+ </div>
+ 
+ 
+      <h2><a id="preguntas"></a>Preguntas frecuentes en los santuarios</h2>
+      <div id="Accordion1" class="Accordion" tabindex="0">
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">&iquest;Por qu&eacute; no puedo llevarme mariposas Monarca si ya est&aacute;n muertas?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr>
+            <td>En la naturaleza todo tiene una raz&oacute;n de ser: Las <strong>mariposas Monarca</strong> son seres vivos que forman parte de la red alimenticia en los bosques de los santuarios. Algunas mueren como parte de su proceso natural y se convierten en alimento de ratones y aves que consumen su abdomen por la grasa que contiene. La gran cantidad de cad&aacute;veres de <strong>mariposas Monarca</strong> en los santuarios genera una alta concentraci&oacute;n de sustancias qu&iacute;micas. Actualmente, los investigadores estudian la posibilidad de que esta alta concentraci&oacute;n ayude a las Monarca a ubicar los sitios de hibernaci&oacute;n.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">&iquest;Por qu&eacute; no puedo tocar y tomar a las mariposas Monarca?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr>
+            <td>Las alas de las mariposas Monarca est&aacute;n formadas por miles de escamas que son muy sensibles al tacto y se desprenden con facilidad. Cuando las agarramos pierden algunas escamas que las protegen y en consecuencia quedan m&aacute;s expuestas a todos los factores ambientales (fr&iacute;o, luz y viento) que ponen en riesgo su vida. Es similar a que nosotros tuvi&eacute;ramos una quemadura de tercer grado.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">&iquest;Por qu&eacute; no puedo usar flash al tomar fotograf&iacute;as?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr>
+            <td>La exposici&oacute;n repetida de luz por el uso del flash, altera el estado de hibernaci&oacute;n de las mariposas Monarca. Las mariposas perciben esta luz y se mueven, se pueden desprender de los &aacute;rboles y separarse de sus colonias. Una vez separadas est&aacute;n m&aacute;s expuestas al fr&iacute;o y a sus depredadores naturales.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">&iquest;Por qu&eacute; no puedo acercarme m&aacute;s a las colonias, si pagu&eacute; mi entrada?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr><td>Las mariposas Monarca viajan hasta 4 mil km para protegerse del fr&iacute;o invierno del norte del continente. Durante su recorrido, de hasta dos meses, evitan una serie de situaciones que las ponen en riesgo y cuando llegan a M&eacute;xico necesitan reposar en los sitios que ellas mismas eligieron para agruparse y formar colonias que las protejan y mantengan vivas durante el invierno. Las <strong>mariposas Monarca</strong> desarrollaron la capacidad de hibernar, esto significa que su organismo est&aacute; adaptado para bajar su metabolismo y temperatura, poner en pausa su estado reproductivo, estar en reposo y vivir de la grasa que almacen&oacute; en su organismo durante el recorrido hasta llegar a los santuarios. No debemos olvidar que son muy sensibles a nuestra presencia y cada vez que ellas se mueven en estado de hibernaci&oacute;n, las debilitamos, ya que gastan energ&iacute;a (grasa) con estos movimientos, la cual necesitan para protegerse de las inclemencias del ambiente (fr&iacute;o, lluvia, granizo, viento y heladas) y para regresar al norte de M&eacute;xico y sur de Estados Unidos. Es similar a que nosotros tuvi&eacute;ramos un grado de anemia estando expuestos al fr&iacute;o en la intemperie.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">&iquest;Por qu&eacute; no puedo hacer ruido?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr><td>Las mariposas Monarca permanecen en estado de hibernaci&oacute;n durante los meses de diciembre, enero y parte de febrero. El exceso de ruido las altera e interrumpe su reposo, las hace gastar energ&iacute;a y reduce las posibilidades de que sobrevivan en el vuelo de regreso.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">&iquest;Por qu&eacute; no puedo estar m&aacute;s tiempo en el santuario?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr>
+            <td>Las mariposas Monarca detectan con sus antenas el bi&oacute;xido de carbono (CO<sub>2</sub>) que emanamos al respirar. Una alta concentraci&oacute;n de CO<sub>2</sub> las altera, ocasionando que vuelen y se desprendan de sus colonias. Esto provoca que gasten energ&iacute;a, dej&aacute;ndolas vulnerables al clima y sus depredadores naturales.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">&iquest;Por qu&eacute; no puedo comer cuando estoy observando las mariposas?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr><td>Los residuos s&oacute;lidos org&aacute;nicos (restos de alimentos) e inorg&aacute;nicos (envases y bolsas de pl&aacute;stico, entre otros) contaminan las &aacute;reas de hibernaci&oacute;n de la mariposas Monarca.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">&iquest;Qu&eacute; es un santuario?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr><td>Es un lugar que alberga flora, fauna, paisajes&nbsp; o eventos naturales excepcionales que lo hacen &Uacute;NICO, y debe ser protegido y respetado por su fragilidad e importancia para la naturaleza y la sociedad.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">&iquest;Qu&eacute; es una migraci&oacute;n?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr><td>Es el desplazamiento estacional que realizan algunas especies de animales de un lugar a otro, con el fin de encontrar el mejor lugar para reproducirse, evitar climas extremos o buscar alimento.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">&iquest;Qu&eacute; es hibernaci&oacute;n?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr><td>Es la capacidad que poseen algunos organismos para bajar su metabolismo y temperatura, poner en pausa su estado reproductivo, estar en reposo y alimentarse de las reservas almacenadas hasta que cambien favorablemente las condiciones ambientales externas.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">&iquest;Qu&eacute; es Asclepias?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr>
+            <td>Es una planta&nbsp; conocida com&uacute;nmente como &quot;algodoncillo&quot; de la cual depende la alimentaci&oacute;n de las orugas de la mariposa Monarca durante la primera etapa de su ciclo biol&oacute;gico. El g&eacute;nero <em>Asclepias</em> tiene aproximadamente 140 especies diferentes, siendo la m&aacute;s conocida <em>Asclepias curassavica</em> de flores color naranja con amarillo y l&aacute;tex blanco. Son plantas t&oacute;xicas, pero las orugas almacenan la toxina y la utilizan como mecanismo de protecci&oacute;n de sus depredadores naturales.</td></tr></table></div>
+        </div>
+        <div class="AccordionPanel">
+          <div class="AccordionPanelTab">&iquest;Qu&eacute; es diapausa reproductiva?</div>
+          <div class="AccordionPanelContent"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="10"><tr><td>Es la interrupci&oacute;n del ciclo reproductivo de algunos organismos como los insectos por un periodo de tiempo definido y generalmente est&aacute; asociado al clima y se reanuda cuando se presentan mejores condiciones ambientales para la reproducci&oacute;n.</td></tr></table></div>
+        </div>       
+    </div>
+   
+      
+      <h2><a id="monitoreo"></a>Monitoreo</h2>
+    <div id="grafica" class="drop-shadow raised cen1">
+      <a href="http://awsassets.panda.org/downloads/superficie_de_bosque_ocupado_por_la_mariposa_monarca_en_los_santuarios_de_mexico__2016_2.pdf" target="_blank">
+      <div class='caption' title='Fuente: Rendón-Salinas et al. 2017.'><img src="_imgs/_secciones/grafica_2019-01.png"></div>
+      </a>
+    </div>
+        
+    <div id="graficam" class="drop-shadow raised cen1">
+      <a href="http://awsassets.panda.org/downloads/superficie_de_bosque_ocupado_por_la_mariposa_monarca_en_los_santuarios_de_mexico__2016_2.pdf" target="_blank">
+      <div class='caption' title='Fuente: Rendón-Salinas et al. 2017.'><img src="_imgs/_secciones/grafica_2019-01.png">
+      </div>
+      </a>
+    </div>
+    
+    <p>El monitoreo de las poblaciones en los sitios de hibernaci&oacute;n se inici&oacute; regularmente en 1993.&nbsp; A pesar de congregarse en &aacute;reas relativamente peque&ntilde;as (entre media hect&aacute;rea y 20 hect&aacute;reas), existen grandes dificultades para estimar las poblaciones de Monarca. Hasta el momento se ha tomado como estimaci&oacute;n poblacional la superficie (hect&aacute;reas) ocupada por las mariposas en el <strong>mes de diciembre. </strong>La informaci&oacute;n presentada en los reportes de monitoreo es la superficie acumulada de las agregaciones de mariposas. <strong></strong></p>
+    
+
+<p>Durante los pasados 20 a&ntilde;os (1993 a 2013) la superficie ocupada por las mariposas Monarca en M&eacute;xico ha variado de <strong>0.67 de hect&aacute;rea a 21 hect&aacute;reas</strong>. As&iacute; que millones de mariposas que ocupan m&aacute;s de 3 millones de kil&oacute;metros cuadrados en Estados Unidos y Canad&aacute; durante la &eacute;poca de reproducci&oacute;n se re&uacute;nen en menos de <strong>20 hect&aacute;reas</strong> en M&eacute;xico.</p>
+
+
+      <span class="cf"></span>      
+  </div>
+  <!-- content ENDS-->
+      
+      
+      <div id="footer">
+        <center><img src="_imgs/logos.png" usemap="#Map">
+          <map name="Map">
+            <area shape="rect" coords="5,5,180,57" href="http://www.semarnat.gob.mx" target="_blank">
+            <area shape="rect" coords="192,4,345,59" href="http://www.conanp.gob.mx" target="_blank">
+            <area shape="rect" coords="353,5,494,65" href="http://www.conafor.gob.mx/web/" target="_blank">
+            <area shape="rect" coords="508,6,622,61" href="http://www.profepa.gob.mx" target="_blank">
+            <area shape="rect" coords="638,5,798,58" href="http://www.conabio.gob.mx" target="_blank">
+            <area shape="rect" coords="580,73,696,126" href="http://www.nature.org" target="_blank">
+            <area shape="rect" coords="259,64,336,128" href="http://www.wwf.org.mx" target="_blank">
+            <area shape="rect" coords="100,66,171,130" href="http://www.unam.mx" target="_blank">
+            <area shape="rect" coords="195,65,245,129" href="http://www.ib.unam.mx" target="_blank">
+          </map>
+        </center>
+      </div><!-- footer ENDS-->
+
+</div><!-- wrapper ENDS-->
+<script type="text/javascript">
+var Accordion1 = new Spry.Widget.Accordion("Accordion1",{useFixedPanelHeights:false, contentIsOpen:false, defaultPanel: -1});
+</script>
+
+<!-- Código para estadísticas en Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8226401-19");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- Fin del código para estadísticas en Google Analytics -->
+</body>
+</html>
