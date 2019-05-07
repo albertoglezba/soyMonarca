@@ -1,155 +1,97 @@
-		$(document).ready(function() {
+$(document).ready(function() {
 
-		map = new GMaps({
-		div: '#map',
-		zoom: 9,
-		lat: 19.29478848,
-		lng: -99.65630269,
-		mapTypeId:google.maps.MapTypeId.HYBRID,
-		height: "500px",
-		width:	"100%"
-		});
-
-
-		//console.log('Ya cree el Mapa donde se dibujaran las capas KML(Z)');
-
-		MAPAS = new Array (	["http://www.biodiversidad.gob.mx/calonso/layers/Colonias_de_Mariposas.kmz","Colonias de Mariposas"],
-					["http://www.biodiversidad.gob.mx/calonso/layers/APPF_Nevado_de_Toluca.kml","APPF Nevado de Toluca"],
-					["http://www.biodiversidad.gob.mx/calonso/layers/RB_Mariposa_Monarca.kml","Reserva de la Bi&oacute;sfera de la Mariposa Monarca"],
-					["http://www.biodiversidad.gob.mx/calonso/layers/PN_Izta-Popo.kml","Iztaccihuatl-Popopcatepetl"]);
-			
-			for (var i = 0; i<MAPAS.length;i++){
-				infoWindow =	new google.maps.InfoWindow({});
-				MAPAS[i][2]	=	function(direccion){
-				return	map.loadFromKML({
-				    url: direccion,
-				    preserveViewport: true,
-				    suppressInfoWindows: true,
-						events:{
-							click: function(point){
-								anchoInfo = function(){
-															return parseInt($("#map").width()/5)*4;
-														};
-								altoInfo = function(){
-															return parseInt($("#map").height()/10)*9;
-														};
-								if(point.featureData.infoWindowHtml.indexOf('$[description]')>-1){
-									infoWindow.setContent("<div id='balloon' style='max-height: "+altoInfo()+"px; max-width: "+anchoInfo()+"px;'>"+point.featureData.name+"</div>");
-									infoWindow.maxWidth = 2;
-								}else{
-									infoWindow.setContent("<div id='balloon' style='max-height: "+altoInfo()+"px; max-width: "+anchoInfo()+"px;'>"+point.featureData.infoWindowHtml+"</div>");
-								};
-								infoWindow.setPosition(point.latLng);
-								infoWindow.open(map.map);
-								$(function(){
-									$("#balloon div").removeAttr("style");
-								});
-							}
-						}
-			});
-											}
-			}
+	// Mapa de Google "Hybrid"
+	var GHM_layer = L.tileLayer('http://{s}.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',{
+		subdomains:['mt0','mt1','mt2','mt3'],
+		zIndex: 3,
+		noWrap: true
+	});
 	
-			//console.log('Ya cargue los KML(Z) como Funciones en MAPAS en el indice [2]()');
-
-			/*****************************************************************************************************************/
-
-			cambiaEstado = function(input,indice){
-				if(input.checked){
-					MAPAS[indice][2](MAPAS[indice][0]).setMap(map.map);
-				}else{
-					for(var i = 0 ; i<map.layers.length;i++){
-						//console.log('Encontre Coincidencia: '+MAPAS[indice][0]+' == '+map.layers[i].url+' Procedo a borrar');
-						if(MAPAS[indice][0]==map.layers[i].url){
-							layer = map.layers[i];
-							map.removeLayer(layer);
-						}else{
-							//console.log('No encontre la capa a borrar');
-						}	
-					}
-				}
-			}
-
-			
-			function anadeLista(){
-				//console.log('Añadire los elementos de la lista');
-			    var x = '';
-				for (var i=0; i<MAPAS.length; i++) {
-					//console.log(MAPAS[i][1]);
-				    if (i == 0){   //para el default
-					x= x+'<li style="list-style: none;"><input type="checkbox" onChange="cambiaEstado(this,'+i+')" checked></input><label>'+MAPAS[i][1]+'</label></li>';
-					MAPAS[i][2](MAPAS[i][0]).setMap(map.map);
-				    } else
-					x= x+'<li style="list-style: none;"><input type="checkbox" onChange="cambiaEstado(this,'+i+')"></input><label>'+MAPAS[i][1]+'</label></li>';
-				}
-				return x;
-			}
-
-			function anadeControlCapas(){
-				//console.log('Inserto el control de cambio de capa');
-				map.addControl({
-					position: 'right_bottom',
-					content: 	'<div class="gmapv3control overlaycontrol" id="capas" style="padding: 5px;">'+
-										'<span class="ui-icon ui-icon-grip-diagonal-se">HOLA</span>'+	
-										'<ul id="lista_capas" style="display: none; margin-left: 20px; margin-right: 10px; padding: 0px;">.:Mapas Mariposa Monarca:.'+
-										anadeLista()+
-										'</ul>'+
-										'</div>',
-					style: {
-						margin: '5px',
-						padding: '0 0 0 0',
-						border: 'solid 1px #717B87',
-						background: '#fff'
-					},
-					events: {
-						mouseover: function(){
-						var controlUI = $('#capas');
-						controlUI.addClass('open');
-						$('#lista_capas').show();
-						},
-						mouseout: function(){
-						var controlUI = $('#capas');
-						controlUI.removeClass('open')
-						$('#lista_capas').hide()
-						}
-//						click: function(){
-//							$('#capas').toggleClass("open");
-//							$('#lista_capas').toggle();
-//						}
-					}
-				});
-			}
-
-			function anadeControlFullScreen(){
-				//console.log('Inserto el control de cambio de capa');
-				map.addControl({
-					position: 'top_right',
-					content: 	'<div class="gmapv3control overlaycontrol" id="capas" style="padding: 1px;">'+
-										'<span class="ui-icon ui-icon-arrow-4-diag">HOLA</span>'+	
-										'</div>',
-					style: {
-						margin: '3px',
-						padding: '0 0 0 0',
-						border: 'solid 1px #717B87',
-						background: '#fff'
-					},
-					events: {
-						click: function(){
-							$("#map").toggleClass("fullscreen");
-							if(document.getElementById("map").style.position=="relative"){
-									document.getElementById("map").style.position="fixed";
-									document.getElementById("map").style.height="100%";
-							}	else{
-									document.getElementById("map").style.position="relative"
-									document.getElementById("map").style.height="500px";
-							}
-							google.maps.event.trigger(map.map, 'resize');
-						}
-					}
-				});
-			}
-
-			anadeControlFullScreen();
-			anadeControlCapas();
-			//document.getElementById("map").style.position="absolute";
-			});
+	// Para poner las capas iniciales de los mapas
+	var baseMaps = {
+		"Open Street Maps": L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png',{zIndex: 1,noWrap: true}),
+		"Vista de terreno": L.tileLayer('http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',{subdomains:['mt0','mt1','mt2','mt3'],zIndex: 2,noWrap: true}),
+		"Vista Híbrida": GHM_layer
+	};
+	
+	// Localidad de masomenos Toluca y alrededores
+	var place = [19.29478848, -99.65630269];
+	
+	// Control para pantalla completa
+	var fullscreen = L.control.fullscreen({
+		position: 'topleft',
+		title: 'Pantalla completa',
+		titleCancel: 'Salir de pantalla completa'
+	});
+	
+	// Ícono para mariposas
+	var monarcaIcon = L.icon({
+		iconUrl: '_imgs/monarca_icon.png',
+		iconSize:     [44, 30], // size of the icon
+		iconAnchor:   [22, 15], // point of the icon which will correspond to marker's location
+		popupAnchor:  [-3, -30] // point from which the popup should open relative to the iconAnchor
+	});
+	
+	
+	//Cargando cada uno de los KML convertidos a geoJSON
+	var a = L.geoJSON(null,{
+		onEachFeature: function(feature, layer){
+			layer.bindPopup(feature.properties.Name);
+		},
+		pointToLayer: function (feature, latlng) {
+			return L.marker(latlng, {icon: monarcaIcon});
+		}
+	});
+	$.getJSON("_maps/Colonias_de_Mariposas.json", function(json){
+		a.addData(json);
+	});
+	
+	var b = L.geoJSON(null,{
+		onEachFeature: function(feature, layer){
+			layer.bindPopup("<h4>"+feature.properties.Name+"</h4>"+feature.properties.Description);
+		},
+	});
+	$.getJSON("_maps/APPF_Nevado_de_Toluca.json", function(json){
+		b.addData(json);
+	});
+	
+	var c = L.geoJSON(null,{
+		onEachFeature: function(feature, layer){
+			layer.bindPopup("<h4>"+feature.properties.Name+"</h4>"+feature.properties.Description);
+		},
+	});
+	$.getJSON("_maps/RB_Mariposa_Monarca.json", function(json){
+		c.addData(json);
+	});
+	
+	var d = L.geoJSON(null,{
+		onEachFeature: function(feature, layer){
+			layer.bindPopup("<h4>"+feature.properties.Name+"</h4>"+feature.properties.Description);
+		},
+	});
+	$.getJSON("_maps/PN_Izta-Popo.json", function(json){
+		d.addData(json);
+	});
+	
+	// Para poner los títulos de los KML convertidos y crear el control de dichas capitas
+	var overlayMaps = {
+		"Colonias de Mariposas": a,
+		"APPF Nevado de Toluca": b,
+		"Reserva de la Biósfera de la Mariposa Monarca": c,
+		"Iztaccihuatl-Popopcatepetl":d
+	};
+	
+	//Iniciando el mapa
+	var map = L.map('map', {
+		zoomControl: true,
+		doubleClickZoom: false,
+		layers: [GHM_layer, a]
+	});
+	
+	map.addControl(fullscreen);
+	map.setView(place, 9);  // Default place and zoom
+	
+	L.control.layers(baseMaps).addTo(map);
+	L.control.layers(null, overlayMaps, {collapsed: false, position: 'bottomleft'}).addTo(map);
+	
+});
