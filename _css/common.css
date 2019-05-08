@@ -234,8 +234,8 @@ body {
 	}
 
 .hanging-indent {
-	text-indent:-40px;
-	padding-left:40px;
+	text-indent:-43px;
+	padding-left:43px;
 	}
 	
 .resaltar {
@@ -513,4 +513,13 @@ z-index: 1;
 audio {
 	background-color: #D4E016;
 	width: 200px;
+}
+
+.fecha{
+	color:#480C01;
+	font-weight: 700;
+	font-style: italic;
+	font-family: 'Ubuntu', serif;
+	font-size: 1.2em;
+	margin-right: 7px;
 }
